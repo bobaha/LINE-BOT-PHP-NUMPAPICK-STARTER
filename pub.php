@@ -4,7 +4,20 @@
      $KEY = "rnfZOoPW9tToG4b"; //enter your key
     $SECRET = "XDjFXfC11cIryjGIV9rmzrdTN"; //enter your secret
     $Topic = "$topic"; 
-    $msg = "Test Reply";
+     if ($msg == "- ADD0" || $msg == "- add0")
+     {
+      $msg = "10";
+     }
+     else if ($msg == "- ADD1" || $msg == "- add1")
+     {
+       $msg = "11";
+     }
+     else if ($msg == "help" || $msg == "Help")
+     {
+       $msg = "0";
+     }
+    
+   
       put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
  
   }
