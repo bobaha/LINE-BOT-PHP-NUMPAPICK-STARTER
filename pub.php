@@ -16,6 +16,14 @@
      {
        $msg = "0";
      }
+    else if ($msg == "- Device Info")
+     {
+       $msg = "20";
+     }
+   else if ($msg == "- Springer Info")
+     {
+       $msg = "21";
+     }
     
    
       put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
