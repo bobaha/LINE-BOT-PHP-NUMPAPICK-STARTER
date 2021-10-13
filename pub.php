@@ -4,6 +4,7 @@
      $KEY = "rnfZOoPW9tToG4b"; //enter your key
     $SECRET = "XDjFXfC11cIryjGIV9rmzrdTN"; //enter your secret
     $Topic = "$topic"; 
+    $msg = "Test Reply";
       put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
  
   }
