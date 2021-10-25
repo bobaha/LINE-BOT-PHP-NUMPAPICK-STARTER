@@ -16,11 +16,15 @@
      {
        $msg = "0";
      }
-    else if ($msg == "- Device Info")
+    else if ($msg == "- DeviceInfo")
      {
        $msg = "20";
      }
-   else if ($msg == "- Springer Info")
+   else if ($msg == "- SpringerInfo")
+     {
+       $msg = "21";
+     }
+  else if ($msg == "- NetworkInfo")
      {
        $msg = "21";
      }
