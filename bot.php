@@ -22,6 +22,10 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+			if ($text == "Welcome to beautiful graden by M10M")
+			{
+				$text = "HELP";
+			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			$userId = $event['source']['userId'];
