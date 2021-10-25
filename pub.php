@@ -26,7 +26,7 @@
      }
   else if ($msg == "- NetworkInfo")
      {
-       $msg = "21";
+       $msg = "22";
      }
     
    
