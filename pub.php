@@ -27,6 +27,14 @@
   else if ($msg == "- NetworkInfo")
      {
        $msg = "22";
+     }  
+  else if ($msg == "- Start")
+     {
+       $msg = "40";
+     }
+   else if ($msg == "- Stop")
+     {
+       $msg = "41";
      }
     
    
